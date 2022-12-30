@@ -22,5 +22,11 @@ public class MyRestController {
         return "ok";
     }
 
+    @GetMapping("/api/message/reset")
+    public String reset() {
+        this.var_mes= null;
+        return "ok";
+    }
+
 
 }
