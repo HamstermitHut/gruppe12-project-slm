@@ -16,4 +16,11 @@ public class MyRestController {
             return std_mes;
         }
     }
+    @GetMapping("/api/message/set")
+    public String set(String m){
+        this.var_mes=m;
+        return "ok";
+    }
+
+
 }
